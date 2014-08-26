@@ -1,0 +1,13 @@
+WordCount
+hadoop fs -put ./input/ncdc/sample.txt /output
+
+
+hadoop fs -mkdir hdfs://192.168.0.10:8020/user
+hadoop fs -mkdir hdfs://192.168.0.10:8020/user/root
+hadoop fs -mkdir hdfs://192.168.0.10:8020/user/root/input
+hadoop fs -mkdir hdfs://192.168.0.10:8020/user/root/input/WordCount
+
+
+hadoop fs -put ./input/WordCount.txt hdfs://192.168.0.10:8020/user/root/input/WordCount/
+
+hadoop jar target/BigData-1.0-SNAPSHOT.jar /user/root/input/WordCount/WordCount.txt output

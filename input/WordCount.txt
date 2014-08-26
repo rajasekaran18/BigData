@@ -1,0 +1,2 @@
+first start delete all contents from temporary folder
+start all processes again
