@@ -1,4 +1,4 @@
-WordCount
+WORDCOUNT:
 hadoop fs -put ./input/ncdc/sample.txt /output
 
 
@@ -11,3 +11,9 @@ hadoop fs -mkdir hdfs://192.168.0.10:8020/user/root/input/WordCount
 hadoop fs -put ./input/WordCount.txt hdfs://192.168.0.10:8020/user/root/input/WordCount/
 
 hadoop jar target/BigData-1.0-SNAPSHOT.jar /user/root/input/WordCount/WordCount.txt output
+
+
+
+MAVEN:
+
+sudo mvn package
