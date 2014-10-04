@@ -12,6 +12,11 @@ hadoop fs -put ./input/WordCount.txt hdfs://192.168.0.10:8020/user/root/input/Wo
 
 hadoop jar target/BigData-1.0-SNAPSHOT.jar /user/root/input/WordCount/WordCount.txt output
 
+SequenceFileWriter
+hadoop jar target/BigData-1.0-SNAPSHOT.jar com.ic.fs.ds.SequenceFileWriter /user/root/input/numbers.seq
+
+SequenceFileRead
+hadoop jar target/BigData-1.0-SNAPSHOT.jar com.ic.fs.ds.SequenceFileRead /user/root/input/numbers.seq
 
 
 MAVEN:
