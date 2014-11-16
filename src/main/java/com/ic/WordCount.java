@@ -36,7 +36,8 @@ public class WordCount extends Configured implements Tool
         		word.set(tokenizer.nextToken());
         		context.write(word, one);
         	}        	
-        }    	
+        } 
+        
     }
     
     public static class Reduce extends Reducer<Text, IntWritable, Text, IntWritable>
@@ -55,9 +56,10 @@ public class WordCount extends Configured implements Tool
     }
     
 	
-
+    
 	@Override
-	public int run(String[] args) throws Exception {
+	public int run(String[] args) throws Exception 
+	{
 		// TODO Auto-generated method stub
 		
 		Configuration conf =new Configuration();
@@ -84,11 +86,11 @@ public class WordCount extends Configured implements Tool
 			return -1; 	
 	}
 	
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception 
+	{
 		
 		int res = ToolRunner.run(new WordCount(), args);
-		System.exit(res);
-		
+		System.exit(res);		
 	}
 	
 }

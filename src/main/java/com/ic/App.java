@@ -8,7 +8,7 @@ import java.util.UUID;
  */
 public class App 
 {
-	public static void main( String[] args )
+	public static void main1( String[] args )
     {
         App obj = new App();
         System.out.println("Unique ID : " + obj.generateUniqueKey());
