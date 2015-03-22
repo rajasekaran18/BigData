@@ -1,3 +1,16 @@
+lxc
+sudo lxc-start -d -n hadoop12
+sudo lxc-start -d -n hadoop13
+
+ssh hduser@10.0.3.41
+ssh hduser@10.0.3.254
+
+su hduser
+start-dfs.sh
+start-yarn.sh
+
+
+
 WORDCOUNT:
 hadoop fs -put ./input/ncdc/sample.txt /output
 
